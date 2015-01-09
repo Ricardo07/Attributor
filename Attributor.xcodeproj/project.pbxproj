@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		8C682CEC1A5B346200E15C10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C682CEB1A5B346200E15C10 /* main.m */; };
 		8C682CEF1A5B346200E15C10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C682CEE1A5B346200E15C10 /* AppDelegate.m */; };
-		8C682CF21A5B346200E15C10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C682CF11A5B346200E15C10 /* ViewController.m */; };
 		8C682CF51A5B346200E15C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C682CF31A5B346200E15C10 /* Main.storyboard */; };
 		8C682CF71A5B346200E15C10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C682CF61A5B346200E15C10 /* Images.xcassets */; };
 		8C682CFA1A5B346200E15C10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C682CF81A5B346200E15C10 /* LaunchScreen.xib */; };
 		8C682D061A5B346200E15C10 /* AttributorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C682D051A5B346200E15C10 /* AttributorTests.m */; };
+		8C682D111A5B350D00E15C10 /* AttributorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C682D101A5B350D00E15C10 /* AttributorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		8C682CEB1A5B346200E15C10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8C682CED1A5B346200E15C10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8C682CEE1A5B346200E15C10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8C682CF01A5B346200E15C10 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8C682CF11A5B346200E15C10 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8C682CF41A5B346200E15C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C682CF61A5B346200E15C10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8C682CF91A5B346200E15C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8C682CFF1A5B346200E15C10 /* AttributorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C682D041A5B346200E15C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C682D051A5B346200E15C10 /* AttributorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributorTests.m; sourceTree = "<group>"; };
+		8C682D0F1A5B350D00E15C10 /* AttributorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributorViewController.h; sourceTree = "<group>"; };
+		8C682D101A5B350D00E15C10 /* AttributorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,8 @@
 		8C682CE81A5B346200E15C10 /* Attributor */ = {
 			isa = PBXGroup;
 			children = (
-				8C682CED1A5B346200E15C10 /* AppDelegate.h */,
-				8C682CEE1A5B346200E15C10 /* AppDelegate.m */,
-				8C682CF01A5B346200E15C10 /* ViewController.h */,
-				8C682CF11A5B346200E15C10 /* ViewController.m */,
+				8C682D0F1A5B350D00E15C10 /* AttributorViewController.h */,
+				8C682D101A5B350D00E15C10 /* AttributorViewController.m */,
 				8C682CF31A5B346200E15C10 /* Main.storyboard */,
 				8C682CF61A5B346200E15C10 /* Images.xcassets */,
 				8C682CF81A5B346200E15C10 /* LaunchScreen.xib */,
@@ -96,6 +94,8 @@
 		8C682CE91A5B346200E15C10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8C682CED1A5B346200E15C10 /* AppDelegate.h */,
+				8C682CEE1A5B346200E15C10 /* AppDelegate.m */,
 				8C682CEA1A5B346200E15C10 /* Info.plist */,
 				8C682CEB1A5B346200E15C10 /* main.m */,
 			);
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C682CF21A5B346200E15C10 /* ViewController.m in Sources */,
+				8C682D111A5B350D00E15C10 /* AttributorViewController.m in Sources */,
 				8C682CEF1A5B346200E15C10 /* AppDelegate.m in Sources */,
 				8C682CEC1A5B346200E15C10 /* main.m in Sources */,
 			);

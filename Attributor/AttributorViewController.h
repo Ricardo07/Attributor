@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AttributorViewController.h
 //  Attributor
 //
 //  Created by Ricardo Batista on 1/5/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AttributorViewController : UIViewController
 
 @end
-
