@@ -14,6 +14,7 @@
 		8C682CFA1A5B346200E15C10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C682CF81A5B346200E15C10 /* LaunchScreen.xib */; };
 		8C682D061A5B346200E15C10 /* AttributorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C682D051A5B346200E15C10 /* AttributorTests.m */; };
 		8C682D111A5B350D00E15C10 /* AttributorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C682D101A5B350D00E15C10 /* AttributorViewController.m */; };
+		8CBD4C7C1A60683200C3D22A /* TextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD4C7B1A60683200C3D22A /* TextStatsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8C682D051A5B346200E15C10 /* AttributorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributorTests.m; sourceTree = "<group>"; };
 		8C682D0F1A5B350D00E15C10 /* AttributorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributorViewController.h; sourceTree = "<group>"; };
 		8C682D101A5B350D00E15C10 /* AttributorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributorViewController.m; sourceTree = "<group>"; };
+		8CBD4C7A1A60683200C3D22A /* TextStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStatsViewController.h; sourceTree = "<group>"; };
+		8CBD4C7B1A60683200C3D22A /* TextStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStatsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +84,8 @@
 		8C682CE81A5B346200E15C10 /* Attributor */ = {
 			isa = PBXGroup;
 			children = (
-				8C682D0F1A5B350D00E15C10 /* AttributorViewController.h */,
-				8C682D101A5B350D00E15C10 /* AttributorViewController.m */,
 				8C682CF31A5B346200E15C10 /* Main.storyboard */,
-				8C682CF61A5B346200E15C10 /* Images.xcassets */,
-				8C682CF81A5B346200E15C10 /* LaunchScreen.xib */,
+				8CBD4C791A6067EE00C3D22A /* ViewControllers */,
 				8C682CE91A5B346200E15C10 /* Supporting Files */,
 			);
 			path = Attributor;
@@ -94,6 +94,8 @@
 		8C682CE91A5B346200E15C10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8C682CF81A5B346200E15C10 /* LaunchScreen.xib */,
+				8C682CF61A5B346200E15C10 /* Images.xcassets */,
 				8C682CED1A5B346200E15C10 /* AppDelegate.h */,
 				8C682CEE1A5B346200E15C10 /* AppDelegate.m */,
 				8C682CEA1A5B346200E15C10 /* Info.plist */,
@@ -117,6 +119,17 @@
 				8C682D041A5B346200E15C10 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CBD4C791A6067EE00C3D22A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C682D0F1A5B350D00E15C10 /* AttributorViewController.h */,
+				8C682D101A5B350D00E15C10 /* AttributorViewController.m */,
+				8CBD4C7A1A60683200C3D22A /* TextStatsViewController.h */,
+				8CBD4C7B1A60683200C3D22A /* TextStatsViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				8C682D111A5B350D00E15C10 /* AttributorViewController.m in Sources */,
 				8C682CEF1A5B346200E15C10 /* AppDelegate.m in Sources */,
 				8C682CEC1A5B346200E15C10 /* main.m in Sources */,
+				8CBD4C7C1A60683200C3D22A /* TextStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +426,7 @@
 				8C682D0B1A5B346200E15C10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C682D0C1A5B346200E15C10 /* Build configuration list for PBXNativeTarget "AttributorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				8C682D0E1A5B346200E15C10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
